@@ -1,0 +1,226 @@
+-- filename: 
+-- version: lua51
+-- line: [0, 0] id: 0
+
+-- == KEY SYSTEM REMOVED ==
+-- The following code was removed:
+-- 1. All GUI creation (ScreenGui, Frame, Buttons, TextBox, etc.)
+-- 2. All functions related to the key system (r4_0, r5_0, r6_0, r22_0, r23_0, r24_0, r25_0, r26_0)
+-- 3. The logic to fetch and validate the key from pastebin.
+-- 4. The initial check for a saved key.
+-- The main script payload now runs directly.
+
+-- == MAIN SCRIPT PAYLOAD ==
+-- This is the code that originally ran only after a successful key check.
+
+local r5_7 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local r6_7 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local r7_7 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local r8_7 = r5_7:CreateWindow({
+    Title = "Johnnie Walker Hub",
+    SubTitle = "",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true,
+    Theme = "Ocean",
+    MinimizeKey = Enum.KeyCode.LeftControl,
+})
+local r9_7 = {
+    Universal = r8_7:AddTab({
+        Title = "Universal",
+        Icon = "",
+    }),
+    Nights = r8_7:AddTab({
+        Title = "99 Nights in the Forest",
+        Icon = "",
+    }),
+    ArcaneLineage = r8_7:AddTab({
+        Title = "Arcane Lineage",
+        Icon = "",
+    }),
+    Beaks = r8_7:AddTab({
+        Title = "Beaks",
+        Icon = "",
+    }),
+    BladeBall = r8_7:AddTab({
+        Title = "Blade Ball",
+        Icon = "",
+    }),
+    BloxFruits = r8_7:AddTab({
+        Title = "Blox Fruits",
+        Icon = "",
+    }),
+    BloxyBingo = r8_7:AddTab({
+        Title = "Bloxy Bingo",
+        Icon = "",
+    }),
+    BladesBuffoonery = r8_7:AddTab({
+        Title = "Blades Buffoonery",
+        Icon = "",
+    }),
+    BubbleGumSimulatorInfinity = r8_7:AddTab({
+        Title = "Bubble Gum Simulator INFINITY",
+        Icon = "",
+    }),
+    BuildABoatForTreasure = r8_7:AddTab({
+        Title = "Build a Boat For Treasure",
+        Icon = "",
+    }),
+    DandysWorld = r8_7:AddTab({
+        Title = "Dandy\'s World",
+        Icon = "",
+    }),
+    DeadRails = r8_7:AddTab({
+        Title = "Dead Rails",
+        Icon = "",
+    }),
+    DeathBall = r8_7:AddTab({
+        Title = "Death Ball",
+        Icon = "",
+    }),
+    Dig = r8_7:AddTab({
+        Title = "DIG",
+        Icon = "",
+    }),
+    DigIt = r8_7:AddTab({
+        Title = "Dig It",
+        Icon = "",
+    }),
+    Doors = r8_7:AddTab({
+        Title = "Doors",
+        Icon = "",
+    }),
+    DressToImpress = r8_7:AddTab({
+        Title = "Dress To Impress",
+        Icon = "",
+    }),
+    Fisch = r8_7:AddTab({
+        Title = "Fisch",
+        Icon = "",
+    }),
+    Forsaken = r8_7:AddTab({
+        Title = "Forsaken",
+        Icon = "",
+    }),
+    GhoulRe = r8_7:AddTab({
+        Title = "GHOUL://RE",
+        Icon = "",
+    }),
+    GrowAGarden = r8_7:AddTab({
+        Title = "Grow a Garden",
+        Icon = "",
+    }),
+    HaikyuuLegends = r8_7:AddTab({
+        Title = "Haikyuu Legends",
+        Icon = "",
+    }),
+    HeistTycoon = r8_7:AddTab({
+        Title = "Heist Tycoon",
+        Icon = "",
+    }),
+    HordeSlayer = r8_7:AddTab({
+        Title = "Horde Slayer: Conan [BETA]",
+        Icon = "",
+    }),
+    LegendsOfSpeed = r8_7:AddTab({
+        Title = "Legends Of Speed",
+        Icon = "",
+    }),
+    LevelBelow = r8_7:AddTab({
+        Title = "Level Below",
+        Icon = "",
+    }),
+    MidnightChasers = r8_7:AddTab({
+        Title = "Midnight Chasers",
+        Icon = "",
+    }),
+    PassOrDie = r8_7:AddTab({
+        Title = "Pass Or Die",
+        Icon = "",
+    }),
+    Rivals = r8_7:AddTab({
+        Title = "Rivals",
+        Icon = "",
+    }),
+    RoadRageSimulator = r8_7:AddTab({
+        Title = "Road Rage Simulator",
+        Icon = "",
+    }),
+    StealABrainrot = r8_7:AddTab({
+        Title = "Steal A Brainrot",
+        Icon = "",
+    }),
+    StealABrainrotModded = r8_7:AddTab({
+        Title = "Steal A Brainrot MODDED",
+        Icon = "",
+    }),
+    SuperPowerLeague = r8_7:AddTab({
+        Title = "Super Power League",
+        Icon = "",
+    }),
+    TheStrongestBattlegrounds = r8_7:AddTab({
+        Title = "The Strongest Battlegrounds",
+        Icon = "",
+    }),
+    UntitledDrillGame = r8_7:AddTab({
+        Title = "Untitled Drill Game",
+        Icon = "",
+    }),
+    Vesteria = r8_7:AddTab({
+        Title = "Vesteria",
+        Icon = "",
+    }),
+    VisionarySquad = r8_7:AddTab({
+        Title = "Visionary Squad",
+        Icon = "",
+    }),
+    VolleyballX = r8_7:AddTab({
+        Title = "Volleyball X",
+        Icon = "",
+    }),
+    WarTycoon = r8_7:AddTab({
+        Title = "War Tycoon",
+        Icon = "",
+    }),
+    Settings = r8_7:AddTab({
+        Title = "Settings",
+        Icon = "settings",
+    }),
+}
+r9_7.Universal:AddButton({
+    Title = "Animation GUI",
+    Description = "with jerk off tool",
+    Callback = function()
+        -- line: [0, 0] id: 48
+        local r0_48 = {
+            Notification = Instance.new("ScreenGui"),
+            Frame = Instance.new("Frame"),
+            UICorner = Instance.new("UICorner"),
+            UIStroke = Instance.new("UIStroke"),
+            TextLabel = Instance.new("TextLabel"),
+            ["Frame 2"] = Instance.new("Frame"),
+            UIListLayout = Instance.new("UIListLayout"),
+            TextButton = Instance.new("TextButton"),
+            ["UICorner 2"] = Instance.new("UICorner"),
+            ["UIStroke 2"] = Instance.new("UIStroke"),
+        }
+        r0_48.Notification.Name = "Notification"
+        r0_48.Notification.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+        r0_48.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+        r0_48.Frame.Size = UDim2.new(0, 0, 0, 0)
+        r0_48.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+        r0_48.Frame.BackgroundColor3 = Color3.fromRGB(10, 140, 175)
+        r0_48.Frame.BorderSizePixel = 0
+        r0_48.Frame.Name = "Frame"
+        r0_48.Frame.Parent = r0_48.Notification
+        r0_48.UICorner.Name = "UICorner"
+        r0_48.UICorner.Parent = r0_48.Frame
+        r0_48.UIStroke.Color = Color3.fromRGB(0, 220, 255)
+        r0_48.UIStroke.Thickness = 4
+        r0_48.UIStroke.Name = "UIStroke"
+        r0_48.UIStroke.Parent = r0_48.Frame
+        r0_48.TextLabel.Position = UDim2.new(0, 10, 0, 7)
+        r0_48.TextLabel.Size = UDim2.new(1, -20, 0, 80)
+        r0_48.TextLabel.BackgroundTransparency = 1
+        r0_48.TextLabel.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+        r0_48.TextLabel.Text = "Aqua Hub
